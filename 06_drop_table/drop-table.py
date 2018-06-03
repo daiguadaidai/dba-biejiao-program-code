@@ -545,6 +545,7 @@ class DropTable(object):
         undrop_table_hosts = {key: True for key in self.instances}
 
         while undrop_table_hosts:
+            time.sleep(5)
 
             # 重新拷贝一份需要删除文件的 host 列表, 用于循环使用
             tmp_undrop_table_hosts = copy.deepcopy(undrop_table_hosts)
@@ -563,9 +564,8 @@ class DropTable(object):
                         ibd_file = instance['ibd_file'],
                         host = key))
 
-                    undrop_table_hosts.append(key)
-
                     print msg
+                    continue
                 else: # 文件不存在, 就 truncate 硬链接文件文件, 并 rm
                     file_path = '{ibd_file}.hdlk'.format(ibd_file = instance['ibd_file'])
 
