@@ -1,0 +1,12 @@
+hash: eb03ab39ba745c8d813170695918a1997a0a3d4a615f934cd8f8fbfcb4d73531
+updated: 2018-10-24T00:46:24.436946764+08:00
+imports:
+- name: github.com/go-sql-driver/mysql
+  version: d523deb1b23d913de5bdada721a6071e71283618
+- name: google.golang.org/appengine
+  version: ae0ab99deb4dc413a2b4bd6c8bdd0eb67f1e4d06
+  repo: https://github.com/golang/appengine
+  vcs: git
+  subpackages:
+  - cloudsql
+testImports: []

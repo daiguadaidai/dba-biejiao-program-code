@@ -1,0 +1,9 @@
+package: github.com/daiguadaidai/dba-biejiao-program-code/08_glide_demo
+import:
+- package: github.com/go-sql-driver/mysql
+  version: ~1.4.0
+- package: google.golang.org/appengine
+  repo: https://github.com/golang/appengine
+  vcs: git
+  subpackages:
+  - cloudsql

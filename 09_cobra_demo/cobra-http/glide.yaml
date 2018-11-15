@@ -1,0 +1,4 @@
+package: github.com/daiguadaidai/dba-biejiao-program-code/09_cobra_demo/cobra-http
+import:
+- package: github.com/spf13/cobra
+  version: ~0.0.3
